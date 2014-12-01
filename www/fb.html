@@ -13,22 +13,22 @@
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
  		<link rel="stylesheet" href="css/jquery.mobile.css" />
 		<script type="text/javascript" src="js/jquery.mobile.js"></script>
-		<script src="cdv-plugin-fb-connect.js"></script>
-		<script src="facebook-js-sdk.js"></script>
         <!-- User-generated js -->
 
     </head>
 	<body onload="init()">
 
 <!-- Inizio codice Facebook -->	
+
 	<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1&appId=155903437779047";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/it_IT/sdk.js#xfbml=1&appId=372001936302608&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 <!-- Fine codice Facebook -->
 
 		<!-- Facebook -->
@@ -48,8 +48,7 @@
 	
 				<div data-role="content" class="content">
 					<center>
-						<div class="fb-like-box" data-href="http://www.facebook.com/Etronic.org" data-width="292" data-show-faces="true" data-colorscheme="dark" data-stream="true" data-header="false"></div>
-						<div class="fb-comments" data-href="http://www.etronic.org" data-width="292" data-num-posts="10" data-colorscheme="dark"></div>
+						<div class="fb-like-box" data-href="https://www.facebook.com/MyAppWebRevolution" data-colorscheme="dark" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
 					</center>
 				</div>
 	
