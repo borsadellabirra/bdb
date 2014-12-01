@@ -66,9 +66,9 @@ A list of available plugins are available at https://build.phonegap.com/docs/plu
 		<param name="APP_ID" value="155903437779047" />
 		<param name="APP_NAME" value="Borsadellabirra APP" />
 	</gap:plugin>
-
+<!--
 	<gap:plugin name="Twitter" value="com.phonegap.plugins.twitter.Twitter"/>
-	
+-->	
     <!-- Define app icon for each platform. -->
 	<icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
