@@ -13,69 +13,40 @@
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
  		<link rel="stylesheet" href="css/jquery.mobile.css" />
 		<script type="text/javascript" src="js/jquery.mobile.js"></script>
-		<!-- JS Cycle2 -->
-		<script src="js/jquery.cycle2.js"></script>
-		<script src="js/jquery.cycle2.carousel.js"></script>
-		<style>
-			#tweets { width: 400px; margin: auto }
-			#tweets .cycle-carousel-wrap > div { padding: 5px; background: #FFFFCC; margin-bottom: 5px; 
-				min-height: 58px; border-radius: 4px; width: 360px; 
-			}
-			#tweets img { width: 48px; height: 48px; margin: 0 5px 5px 0; vertical-align: top; float: left; }
-		</style>
-		<link rel="stylesheet" href="css/slideshow.css">
         <!-- User-generated js -->
 
     </head>
-	<body>
+	<body onload="init()">
 
 		<!-- Twitter -->
-        <section id="twitter" data-role="page" data-theme="b">
+        <section id="tw" data-role="page" data-theme="b">
             <header data-role="header">
 				<a href="index.html" data-role="button" data-icon="arrow-l">Back</a>
                 <h1>
                     Borsadellabirra APP
                 </h1>
- 				<a href="#" id="TwRefresh" data-role="button" data-icon="refresh">Aggiorna</a>
+				<a href="#" id="twRefresh" data-role="button" data-icon="refresh">Aggiorna</a>
 					<script type="text/javascript">
-						$('#TwRefresh').click(function() {
+						$('#twRefresh').click(function() {
 								  location.reload();
 						});
-					</script>
+					</script>				
             </header>
-
+	
 				<div data-role="content" class="content">
-					<center><span>Cliccare <b>Aggiorna</b> per visualizzare i nuovi Tweet</span></center>
-						<div align="center"style="position: relative; overflow: hidden;"
-							id="tweets" 
-							data-cycle-fx="carousel"
-							data-cycle-carousel-vertical="true"
-							data-cycle-carousel-visible="5"
-							data-cycle-timeout="5000"
-							data-cycle-slides=">div">
-						</div>
-
-						<script>
-						$.getJSON('http://search.twitter.com/search.json?callback=?&q=etronic_org', function(json) {
-							var tweets = $('#tweets');
-							$.each(json.results, function(i) {
-								var tweet = this, text = tweet.text;
-								text = text.replace(/(http:\/\/\S+)/g, '<a href="$1">$1</a>');
-								text = text.replace(/\@(\w+)/g, '<a href="http://twitter.com/$1">@$1</a>');
-								tweets.append( '<div><img src="' + tweet.profile_image_url + '">' + text + '</div>' );
-							});
-							tweets.cycle();
-						});
-						</script>
+					<center>
+						<a class="twitter-timeline" href="https://twitter.com/borsadellabirra" data-widget-id="551673621664788480">Tweet di @borsadellabirra</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</center>
 				</div>
 	
             <footer data-role="footer">
                 <h2>
-                    Etronic.org & My-App.it &copy 2014
+                    Etronic.org & My-App.it &copy 2015
                 </h2>
             </footer>
         </section>
 		<!-- FINE Twitter -->
-
+		
     </body>
 </html>
