@@ -10,54 +10,61 @@
         </title>
 		
 		<script type="text/javascript" src="js/jquery.js"></script>
-		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
  		<link rel="stylesheet" href="css/jquery.mobile.css" />
 		<script type="text/javascript" src="js/jquery.mobile.js"></script>
 
         <!-- User-generated js -->
 
+		<link rel="stylesheet" href="css/material-click.css">
+		<script src="js/material-click.js"></script>
+
+
     </head>
-	<body onload="init()">
+	<body>
 
         <!-- Info -->
-        <section id="info" data-role="page" data-theme="b">
+        <section id="info" data-role="page" data-theme="a">
             <header data-role="header">
-				<a href="index.html" data-role="button" data-icon="arrow-l">Back</a>
+				<a href="index.html" data-role="button" data-icon="arrow-l" class="ripple-effect">Back</a>
                 <h1>
                     Borsadellabirra APP
                 </h1>
             </header>
             <div data-role="content" class="content">
                 <ul data-role="listview" data-inset="true" data-theme="c">
-                    <li data-role="divider" data-theme="b">Borsadellabirra Credits:</li>
+                    <li data-role="divider" data-theme="a">Borsadellabirra Credits:</li>
 					<li data-icon="false">
-						<a href="https://build.phonegap.com/" target="_blank">Adobe PhoneGap</a>
+						<a href="https://build.phonegap.com/" target="_blank" class="ripple-effect">Adobe PhoneGap</a>
 					</li>
 					<li data-icon="false">
-						<a href="http://www.jquerymobile.com" target="_blank">JQuerymobile</a>
+						<a href="http://www.jquerymobile.com" target="_blank" class="ripple-effect">JQuerymobile</a>
 					</li>
 					<li data-icon="false">
-						<a href="http://www.twitter.com/" target="_blank">Twitter Social Plugins</a>
+						<a href="http://www.twitter.com/" target="_blank" class="ripple-effect">Twitter Social Plugins</a>
                     </li>
 					<li data-icon="false">
-						<a href="http://developers.facebook.com/docs/plugins/" target="_blank">Facebook Social Plugins</a>
+						<a href="http://developers.facebook.com/docs/plugins/" target="_blank" class="ripple-effect">Facebook Social Plugins</a>
                     </li>
 				</ul>
                 <ul data-role="listview" data-inset="true" data-theme="c">
-                    <li data-role="divider"  data-inset="false" data-theme="b">Changelog</li>
-					<li data-role="collapsible" data-mini="true">
+                    <li data-role="divider"  data-inset="false" data-theme="a">Changelog</li>
+					<li data-role="collapsible" data-mini="true" class="ripple-effect">
+						<h3>Versione 1.0.4</h3>
+						<p>Aggiornamento 11-05-2015.<br/>Nuova veste grafica.<br/>Aggiornamento a Material Design.</p>
+                    </li>
+					<li data-role="collapsible" data-mini="true" class="ripple-effect">
 						<h3>Versione 1.0.3</h3>
 						<p>Aggiornamento 31-03-2015.<br/>Inserita Sezione Offerte.</p>
                     </li>
-					<li data-role="collapsible" data-mini="true">
+					<li data-role="collapsible" data-mini="true" class="ripple-effect">
 						<h3>Versione 1.0.2</h3>
 						<p>Aggiornamento 15-01-2015.<br/>Aggiornata Sezione Social Network.<br/>Corretti alcuni bug.</p>
                     </li>
-					<li data-role="collapsible" data-mini="true">
+					<li data-role="collapsible" data-mini="true" class="ripple-effect">
 						<h3>Versione 1.0.1</h3>
 						<p>Aggiornamento 04-01-2015.<br/>Aggiornata Sezione Social Network.<br/>Aggiunta Pagina Twitter.</p>
                     </li>
-					<li data-role="collapsible" data-mini="true">
+					<li data-role="collapsible" data-mini="true" class="ripple-effect">
 						<h3>Versione 1.0.0</h3>
 						<p>Release iniziale.<br/>Nuova interfaccia grafica.<br/>MultiOS (Android, iOS, Html5)</p>
                     </li>
