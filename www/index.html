@@ -23,6 +23,26 @@
 		
     </head>
 	<body>
+	<!-- FACEBOOK SDK -->
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2025991897628022',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/it_IT/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+	<!-- FACEBOOK SDK -->
 
         <!-- Home -->
         <section id="home" data-role="page" data-theme="a">
@@ -36,16 +56,16 @@
                     <li data-role="divider" data-theme="a">Sito Borsadellabirra.it</li>
 					<li>
                         <a href="https://www.borsadellabirra.it" class="ripple-effect">
-                            Homepage
+                            Sito Web
                         </a>
                     </li>
                      <li>
-                        <a href="pfolio.html" class="ripple-effect">
+                        <a href="https://www.borsadellabirra.it/locali" class="ripple-effect">
                             Locali
                         </a>
                     </li>
 					<li>
-                        <a href="offerte.html" class="ripple-effect">
+                        <a href="https://www.borsadellabirra.it/category/offerte/" class="ripple-effect">
                             Offerte
                         </a>
                     </li>
@@ -60,6 +80,11 @@
 					<li>
                         <a href="tw.html" class="ripple-effect">
                             Twitter
+                        </a>
+                    </li>
+					<li>
+                        <a href="https://t.me/borsadellabirra" class="ripple-effect">
+                            Canale Telegram
                         </a>
                     </li>
 				</ul>
@@ -79,7 +104,7 @@
             </div>
             <footer data-role="footer">
                 <h2>
-                    Etronic.org & My-App.it &copy 2017
+                    Etronic.org & My-App.it &copy 2017-2018
                 </h2>
             </footer>
         </section>

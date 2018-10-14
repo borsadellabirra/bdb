@@ -23,6 +23,26 @@
 
     </head>
 	<body>
+	<!-- FACEBOOK SDK -->
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2025991897628022',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/it_IT/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+	<!-- FACEBOOK SDK -->
 
 		<!-- Facebook -->
         <section id="fb" data-role="page" data-theme="a">
@@ -41,13 +61,13 @@
 	
 				<div data-role="content" class="content">
 					<center>
-						<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fborsadellabirra.it&amp;width&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=155903437779047" scrolling="no" frameborder="0" style="border:none; overflow:hidden; background-color: white; height:558px;" allowTransparency="false"></iframe>
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fborsadellabirra.it%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=2025991897628022" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 					</center>
 				</div>
 	
             <footer data-role="footer">
                 <h2>
-                    Etronic.org & My-App.it &copy 2017
+                    Etronic.org & My-App.it &copy 2017-2018
                 </h2>
             </footer>
         </section>

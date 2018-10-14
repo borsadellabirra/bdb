@@ -23,6 +23,26 @@
 
     </head>
 	<body>
+	<!-- FACEBOOK SDK -->
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2025991897628022',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/it_IT/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+	<!-- FACEBOOK SDK -->
 
 		<!-- Portfolio -->
         <section id="portfolio" data-role="page" data-theme="a">
@@ -34,9 +54,25 @@
             </header>
 
 				<div data-role="content" class="content">
+				<!-- *** INIZIO LOCALI IN EVIDENZA ***-->
+                <ul data-role="listview" data-inset="true" data-theme="a">
+                    <li data-role="divider" data-theme="a">In Evidenza</li>
+					<!-- *** TODO: inserire codice php per estrarre dal DB i locali VIP *** -->
+					<!-- Creare un ciclo per trovare i locali VIP, quando trovato inserire il tag <li> --->
+                     <li data-icon="star">
+                        <a href="https://www.borsadellabirra.it/demo/" rel="external" class="ripple-effect">
+                        	<img src="img/demo.png" height="100" width="100">
+                            	<h3>DEMO</h3>
+                            	<p>www.borsadellabirra.it/demo</p>
+                        </a>
+                    </li>
+				</ul>
+				<!-- *** FINE LOCALI IN EVIDENZA ***-->
                 <ul data-role="listview" data-filter="true" data-filter-placeholder="Cerca il locale..." data-inset="true" data-theme="a">
-                    <li data-role="divider" data-theme="a">Portfolio</li>
-                     <li data-icon="home">
+                    <li data-role="divider" data-theme="a">Locali</li>
+					<!-- *** TODO: inserire codice php per estrarre dal DB i locali *** -->
+					<!-- Creare un ciclo per trovare i locali ATTIVI, quando trovato inserire il tag <li> --->
+					<li data-icon="home">
                         <a href="https://www.borsadellabirra.it/ilbirraiomatto/" rel="external" class="ripple-effect">
                         	<img src="img/ilbirraiomatto.png" height="100" width="100">
                             	<h3>Il Birraio Matto</h3>
@@ -55,7 +91,7 @@
 
             <footer data-role="footer">
                 <h2>
-                    Etronic.org & My-App.it &copy 2017
+                    Etronic.org & My-App.it &copy 2017-2018
                 </h2>
             </footer>
         </section>
